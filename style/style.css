@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+:root{
+    --custom-text : #99ccff;
+    --sacondary-color: #575757;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #a3beb2;
+}
+.wrapper{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,265px);
+    gap: 15px;
+    
+}
+
+    .dropdown-item {
+        padding: 0.25rem 1rem; 
+    }
+
+
+.wrapper li{
+    height: 250px;
+    list-style: none;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 15px 20px 20px;
+}
+
+
+.dashed-border {
+    border: 2px dashed var(--custom-text); 
+}
+.custom-text {
+    color: var(--custom-text); 
+}
+.note Span{
+    display: block;
+    margin-top: 5px;
+    color: var(--sacondary-color);
+    font-size: 12px;
+}
+.note {
+    border-radius: 10px;
+     margin:0px 0px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.title {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.more {
+    color: #000; 
+}
+.hover-effect {
+    transition: transform 0.3s;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); 
+}
